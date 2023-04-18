@@ -1,0 +1,18 @@
+orientation: normal # Teclado com as teclas para a esquerda e knobs para a direita olhando de frente
+
+rows: 3 # 3 linhas de botões
+columns: 4 # 4 colunas de botões
+knobs: 2 # 2 knobs que giram e são pressionáveis
+
+layers:
+  - buttons:
+      - ["F13", "F14", "F15", "F16"] # Primeira coluna de teclas, definir depois as macros no AutoHotKeys
+      - ["F17", "F18", "F19", "F20"] # Segunda coluna de teclas, definir depois as macros no AutoHotKeys
+      - ["F21", "F22", "F23", "F24"] # Terceira coluna de teclas, definir depois as macros no AutoHotKeys
+    knobs:
+      - ccw: 'volumedown' # Sentido Anti-Horário para diminuir o volume de saída de áudio
+        press: 'mute' # Pressionar o knob para mutar e desmutar a saída de áudio
+        cw: 'volumeup' # Sentido Horário para aumentar o volume a saída de áudio
+      - ccw: 'shift-f13' # micvolumedown - Sentido Anti-Horário para diminuir o volume do microfone
+        press: 'shift-f14' # micmute - Pressionar o knob para mutar e desmutar o microfone
+        cw: 'shift-f15' # micvolumeup - Sentido Horário para aumentar o volume do microfone
